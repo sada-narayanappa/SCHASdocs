@@ -5476,12 +5476,18 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
-<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES"/>
+<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="220"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="144.78" y="109.22" size="1.778" layer="91">BLE113</text>
+<text x="-27.94" y="116.84" size="1.778" layer="91">Micro USB</text>
+<text x="17.78" y="114.3" size="1.778" layer="91">Voltage Regulator</text>
+<text x="0" y="106.68" size="1.778" layer="91">5V</text>
+<text x="50.8" y="99.06" size="1.778" layer="91">3.3V</text>
+<text x="12.7" y="88.9" size="1.778" layer="91">2.6V-3.3V</text>
 </plain>
 <instances>
 <instance part="BLE113" gate="G$1" x="121.92" y="114.3"/>
