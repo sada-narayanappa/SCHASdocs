@@ -4088,6 +4088,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="EN" x="-10.16" y="-5.08" visible="pin" length="short" direction="in"/>
 <pin name="BP" x="7.62" y="-5.08" visible="pin" length="short" direction="in" rot="R180"/>
 </symbol>
+<symbol name="MCP73831">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
+<pin name="VIN" x="-10.16" y="2.54" length="short" direction="pwr"/>
+<pin name="STAT" x="-10.16" y="-2.54" length="short" direction="out"/>
+<pin name="VBAT" x="10.16" y="2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="PROG" x="10.16" y="0" length="short" direction="in" rot="R180"/>
+<pin name="VSS" x="10.16" y="-2.54" length="short" direction="pwr" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MIC5205" prefix="U" uservalue="yes">
@@ -4123,6 +4136,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="VREG-00823"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP73831" prefix="U">
+<description>Miniature single cell, fully integrated Li-Ion, Li-polymer charge management controller&lt;br&gt;
+http://ww1.microchip.com/downloads/en/DeviceDoc/21984a.pdf&lt;br&gt;
+IC-09995</description>
+<gates>
+<gate name="G$1" symbol="MCP73831" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="PROG" pad="5"/>
+<connect gate="G$1" pin="STAT" pad="1"/>
+<connect gate="G$1" pin="VBAT" pad="3"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09995"/>
 </technology>
 </technologies>
 </device>
@@ -5430,6 +5467,70 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-DiscreteSemi">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find discrete semiconductors- transistors, diodes, TRIACs, optoisolators, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SMA-DIODE">
+<description>&lt;B&gt;Diode&lt;/B&gt;&lt;p&gt;
+Basic SMA packaged diode. Good for reverse polarization protection. Common part #: MBRA140</description>
+<wire x1="-2.3" y1="1" x2="-2.3" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.45" x2="2.3" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="2.3" y1="1.45" x2="2.3" y2="1" width="0.2032" layer="21"/>
+<wire x1="2.3" y1="-1" x2="2.3" y2="-1.45" width="0.2032" layer="21"/>
+<wire x1="2.3" y1="-1.45" x2="-2.3" y2="-1.45" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="-1.45" x2="-2.3" y2="-1" width="0.2032" layer="21"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.2032" layer="21"/>
+<smd name="A" x="-2.15" y="0" dx="1.27" dy="1.47" layer="1" rot="R180"/>
+<smd name="C" x="2.15" y="0" dx="1.27" dy="1.47" layer="1"/>
+<text x="-2.286" y="1.651" size="0.4064" layer="25">&gt;NAME</text>
+<text x="0.254" y="1.651" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DIODE-SCHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.778" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.762" y2="-1.524" width="0.254" layer="94"/>
+<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MBRA140" prefix="D">
+<description>40V, 1A Schottky rectifier&lt;br&gt;
+SMA/DO-214AC package&lt;br&gt;
+DIO-08053</description>
+<gates>
+<gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMA-DIODE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-08053"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5478,6 +5579,15 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
 <part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="220"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK"/>
+<part name="D2" library="SparkFun-DiscreteSemi" deviceset="MBRA140" device=""/>
+<part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
+<part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES"/>
+<part name="U2" library="SparkFun-PowerIC" deviceset="MCP73831" device=""/>
+<part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP"/>
+<part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5487,7 +5597,9 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <text x="17.78" y="114.3" size="1.778" layer="91">Voltage Regulator</text>
 <text x="0" y="106.68" size="1.778" layer="91">5V</text>
 <text x="50.8" y="99.06" size="1.778" layer="91">3.3V</text>
-<text x="12.7" y="88.9" size="1.778" layer="91">2.6V-3.3V</text>
+<text x="22.86" y="68.58" size="1.778" layer="91">2.6V-3.3V</text>
+<text x="-22.86" y="91.44" size="1.778" layer="91">Recharging Circuit</text>
+<text x="-43.18" y="35.56" size="1.778" layer="91">NOTE: Battery needs to go through regulator if recharging circuit is present.</text>
 </plain>
 <instances>
 <instance part="BLE113" gate="G$1" x="121.92" y="114.3"/>
@@ -5501,8 +5613,8 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <instance part="SOURCE" gate="1" x="35.56" y="91.44" rot="R180"/>
 <instance part="JP1" gate="G$1" x="-7.62" y="114.3" rot="R180"/>
 <instance part="U1" gate="G$1" x="17.78" y="104.14"/>
-<instance part="BAT" gate="G$1" x="10.16" y="83.82" rot="R270"/>
-<instance part="C1" gate="G$1" x="-7.62" y="81.28"/>
+<instance part="BAT" gate="G$1" x="20.32" y="60.96" rot="R270"/>
+<instance part="C1" gate="G$1" x="-7.62" y="58.42"/>
 <instance part="R4" gate="G$1" x="83.82" y="88.9" rot="R90"/>
 <instance part="R5" gate="G$1" x="96.52" y="88.9" rot="R90"/>
 <instance part="C2" gate="G$1" x="63.5" y="88.9"/>
@@ -5512,8 +5624,8 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <instance part="JP3" gate="G$1" x="198.12" y="83.82" rot="R180"/>
 <instance part="SUPPLY1" gate="GND" x="2.54" y="96.52"/>
 <instance part="SUPPLY2" gate="GND" x="7.62" y="116.84"/>
-<instance part="SUPPLY3" gate="GND" x="-7.62" y="73.66"/>
-<instance part="SUPPLY4" gate="GND" x="10.16" y="71.12"/>
+<instance part="SUPPLY3" gate="GND" x="-7.62" y="50.8"/>
+<instance part="SUPPLY4" gate="GND" x="20.32" y="50.8"/>
 <instance part="SUPPLY5" gate="GND" x="63.5" y="81.28"/>
 <instance part="SUPPLY6" gate="GND" x="154.94" y="2.54"/>
 <instance part="SUPPLY7" gate="GND" x="162.56" y="15.24"/>
@@ -5528,6 +5640,15 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <instance part="SUPPLY15" gate="GND" x="48.26" y="55.88"/>
 <instance part="R6" gate="G$1" x="48.26" y="66.04" rot="R90"/>
 <instance part="JP4" gate="G$1" x="193.04" y="17.78" rot="R180"/>
+<instance part="D2" gate="G$1" x="-12.7" y="99.06" rot="R180"/>
+<instance part="C5" gate="G$1" x="-27.94" y="78.74"/>
+<instance part="R7" gate="G$1" x="5.08" y="83.82"/>
+<instance part="U2" gate="G$1" x="-10.16" y="83.82"/>
+<instance part="C6" gate="G$1" x="15.24" y="81.28"/>
+<instance part="SUPPLY16" gate="GND" x="-27.94" y="73.66"/>
+<instance part="SUPPLY17" gate="GND" x="0" y="73.66"/>
+<instance part="SUPPLY18" gate="GND" x="10.16" y="73.66"/>
+<instance part="SUPPLY19" gate="GND" x="15.24" y="73.66"/>
 </instances>
 <busses>
 </busses>
@@ -5631,20 +5752,6 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <junction x="38.1" y="91.44"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="-7.62" y1="83.82" x2="-7.62" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="SOURCE" gate="1" pin="O"/>
-<wire x1="-7.62" y1="86.36" x2="-7.62" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="88.9" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="BAT" gate="G$1" pin="+"/>
-<junction x="10.16" y="88.9"/>
-<wire x1="10.16" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
-<junction x="30.48" y="88.9"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<junction x="-7.62" y="86.36"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="SOURCE" gate="1" pin="S"/>
@@ -5671,6 +5778,9 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <pinref part="U1" gate="G$1" pin="EN"/>
 <junction x="7.62" y="99.06"/>
 <junction x="5.08" y="109.22"/>
+<wire x1="0" y1="109.22" x2="0" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="0" y1="99.06" x2="-10.16" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5846,17 +5956,17 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="-7.62" y1="76.2" x2="-7.62" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="53.34" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
-<junction x="-7.62" y="78.74"/>
-<junction x="-7.62" y="76.2"/>
+<junction x="-7.62" y="55.88"/>
+<junction x="-7.62" y="53.34"/>
 </segment>
 <segment>
 <pinref part="BAT" gate="G$1" pin="-"/>
-<wire x1="10.16" y1="73.66" x2="10.16" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="53.34" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
-<junction x="10.16" y="78.74"/>
-<junction x="10.16" y="73.66"/>
+<junction x="20.32" y="55.88"/>
+<junction x="20.32" y="53.34"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -5984,6 +6094,25 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <junction x="48.26" y="58.42"/>
 <junction x="48.26" y="60.96"/>
 </segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="SUPPLY16" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VSS"/>
+<wire x1="0" y1="81.28" x2="0" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="SUPPLY17" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="83.82" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="SUPPLY18" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="78.74" x2="15.24" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="SUPPLY19" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="N$8" class="0">
 <segment>
@@ -6085,6 +6214,45 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <wire x1="170.18" y1="38.1" x2="142.24" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="38.1" x2="142.24" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="G$1" pin="4"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="PROG"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="BAT" gate="G$1" pin="+"/>
+<wire x1="-7.62" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="63.5" x2="-7.62" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<junction x="-7.62" y="63.5"/>
+<pinref part="U2" gate="G$1" pin="VBAT"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="0" y1="86.36" x2="15.24" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="86.36" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="86.36" x2="22.86" y2="88.9" width="0.1524" layer="91"/>
+<junction x="15.24" y="86.36"/>
+<pinref part="SOURCE" gate="1" pin="O"/>
+<wire x1="22.86" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="66.04" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
+<junction x="20.32" y="66.04"/>
+<junction x="22.86" y="86.36"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="83.82" x2="-27.94" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="VIN"/>
+<wire x1="-27.94" y1="86.36" x2="-20.32" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="86.36" x2="-27.94" y2="99.06" width="0.1524" layer="91"/>
+<junction x="-27.94" y="86.36"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="-27.94" y1="99.06" x2="-15.24" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
