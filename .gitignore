@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 *.iml
 target
@@ -8,3 +9,8 @@ target
 worldcitiespop.csv
 SCHAS/locationPoller/build/*
 PatientHelper0.25/*
+=======
+.dropbox
+.DS_Store
+no-git
+>>>>>>> 5033062c2334f4e7c63c86cb3b3176da218859ef
