@@ -1,0 +1,8 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+           BLE_NANO             67.818mm     92.2655mm      61.468mm      86.106mm      61.468mm      86.106mm  T         90.00 BLE NANO       
+           Button              78.1685mm      93.345mm      76.835mm      97.155mm      76.835mm      97.155mm  T          0.00 Component_1    
+           BIG_LED              54.483mm      91.735mm      52.683mm      93.935mm      54.483mm      93.935mm  T        270.00                
+           MOSFET_3_PIN         53.463mm      91.313mm      54.348mm      91.313mm      54.348mm      91.313mm  B         90.00 Component_1    
+           CR2032_Holder        68.326mm      91.821mm      68.326mm      91.821mm      68.326mm      80.391mm  B         90.00 Power          
+

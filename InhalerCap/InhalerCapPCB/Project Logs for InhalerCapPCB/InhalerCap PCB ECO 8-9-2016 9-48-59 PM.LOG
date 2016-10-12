@@ -1,0 +1,16 @@
+Added Component: Designator=*(MOSFET_3_PIN)
+Added Component: Designator=Power?(CR2032_Holder)
+Added Pin To Net: NetName=Net*_1 Pin=*-1
+Added Pin To Net: NetName=Net*_1 Pin=*-1
+Added Pin To Net: NetName=Net*_1 Pin=*-2
+Added Pin To Net: NetName=Net*_1 Pin=Power?-1
+Added Net: Name=Net*_1
+Added Pin To Net: NetName=Net*_2 Pin=*-2
+Added Net: Name=Net*_2
+Added Pin To Net: NetName=Net*_3 Pin=*-3
+Added Net: Name=Net*_3
+Added Net: Name=Net*_4
+Added Pin To Net: NetName=NetLED?_0 Pin=Power?-2
+Added Net: Name=NetLED?_0
+Added Class: Name=InhalerCap
+Added Room: Name=InhalerCap

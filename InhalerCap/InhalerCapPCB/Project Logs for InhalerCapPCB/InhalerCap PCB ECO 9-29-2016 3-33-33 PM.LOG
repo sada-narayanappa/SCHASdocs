@@ -1,0 +1,35 @@
+Added Component: Designator=0(BLE_NANO)
+Added Component: Designator=1(Button)
+Added Component: Designator=2(BIG_LED)
+Added Component: Designator=3(MOSFET_3_PIN)
+Added Component: Designator=4(CR2032_Holder)
+Added Pin To Net: NetName=Net0_1 Pin=0-1
+Added Pin To Net: NetName=Net0_1 Pin=1-1
+Added Pin To Net: NetName=Net0_1 Pin=3-2
+Added Pin To Net: NetName=Net0_1 Pin=4-1
+Added Net: Name=Net0_1
+Added Pin To Net: NetName=Net0_2 Pin=0-2
+Added Pin To Net: NetName=Net0_2 Pin=2-3
+Added Net: Name=Net0_2
+Added Pin To Net: NetName=Net0_3 Pin=0-3
+Added Pin To Net: NetName=Net0_3 Pin=2-4
+Added Net: Name=Net0_3
+Added Pin To Net: NetName=Net0_4 Pin=0-4
+Added Pin To Net: NetName=Net0_4 Pin=2-5
+Added Net: Name=Net0_4
+Added Pin To Net: NetName=Net0_6 Pin=0-6
+Added Pin To Net: NetName=Net0_6 Pin=3-3
+Added Net: Name=Net0_6
+Added Pin To Net: NetName=Net0_10 Pin=0-10
+Added Pin To Net: NetName=Net0_10 Pin=1-4
+Added Net: Name=Net0_10
+Added Pin To Net: NetName=Net2_0 Pin=2-0
+Added Pin To Net: NetName=Net2_0 Pin=2-1
+Added Pin To Net: NetName=Net2_0 Pin=2-2
+Added Pin To Net: NetName=Net2_0 Pin=4-2
+Added Net: Name=Net2_0
+Added Pin To Net: NetName=Net3_1 Pin=3-1
+Added Pin To Net: NetName=Net3_1 Pin=4-0
+Added Net: Name=Net3_1
+Added Class: Name=InhalerCap
+Added Room: Name=InhalerCap
